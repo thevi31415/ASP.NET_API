@@ -64,5 +64,21 @@ namespace ASP.NET_API.Controllers
                 return NotFound();
             }
         }
+        [HttpPut("{id}")]
+        public IActionResult UpdateLoaiById(int id, Loai loai)
+        {
+            var Loai = _db.loais.SingleOrDefault(lo => lo.MaLoai == id);
+            if (Loai != null)
+            {
+                Loai.TenLoai = loai.TenLoai;
+                _db.SaveChanges();
+                return Ok(Loai);
+
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
     }
 }
