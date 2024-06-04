@@ -51,7 +51,7 @@ namespace ASP.NET_API.Controllers
 
         }
         [HttpPost]
-        public IActionResult Create(HangHoaVM hangHoaVM)
+        public IActionResult Create(HangHoa hangHoaVM)
         {
             var hanghoa = new HangHoa
             {
