@@ -13,6 +13,7 @@ namespace ASP.NET_API.Data
         }
         public DbSet<HangHoa> hangHoas { get; set; }
         public DbSet<Loai> loais { get; set; }
+        public DbSet<NguoiDung> nguoiDungs { get; set; }
 
     }
 }

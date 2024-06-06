@@ -57,6 +57,8 @@ namespace ASP.NET_API.Controllers
             {
                 MaHangHoa = Guid.NewGuid(),
                 TenHangHoa = hangHoaVM.TenHangHoa,
+                MoTa = hangHoaVM.MoTa,
+                GiamGia = hangHoaVM.GiamGia,
                 DonGia = hangHoaVM.DonGia
             };
             hangHoas.Add(hanghoa);
